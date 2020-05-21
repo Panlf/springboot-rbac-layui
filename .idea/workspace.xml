@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2a3dc89-9a70-4ab5-b421-fe6f6d9a2f23" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bJB5k6g2x9YJZPKTIYaU51BCur" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RbacLayUIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-rbac-layui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.plf.rbac.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.plf.rbac.RbacLayUIApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RbacLayUIApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2a3dc89-9a70-4ab5-b421-fe6f6d9a2f23" name="Default Changelist" comment="" />
+      <created>1588340134180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588340134180</updated>
+      <workItem from="1588340138805" duration="628000" />
+      <workItem from="1589980446368" duration="2303000" />
+      <workItem from="1590067282704" duration="1676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="602" height="174" key="GridCell.Tab.0.bottom" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.0.center" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.0.left" timestamp="1590068365095">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1590068365095" />
+    <state width="602" height="174" key="GridCell.Tab.0.right" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.1.bottom" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.1.center" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.1.left" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state width="602" height="174" key="GridCell.Tab.1.right" timestamp="1590068365096">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="602" height="174" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1590068365096" />
+    <state x="143" y="23" key="SettingsEditor" timestamp="1590067938974">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="143" y="23" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1590067938974" />
+    <state x="664" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1590067294678">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="664" y="261" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1590067294678" />
+  </component>
+</project>
