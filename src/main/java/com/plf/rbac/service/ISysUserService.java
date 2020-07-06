@@ -16,5 +16,19 @@ import java.util.List;
  */
 public interface ISysUserService extends IService<SysUser> {
 
+    /**
+     * 动态根据参数分页查询用户
+     * @param page
+     * @param username
+     * @param realname
+     * @return
+     */
     Page<SysUser> findUserPageByName(Page<SysUser> page, String username, String realname);
+
+    /**
+     * 根据用户查找用户
+     * @param username
+     * @return
+     */
+    SysUser findByUsername(String username);
 }

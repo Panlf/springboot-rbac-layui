@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ import java.util.List;
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 
-    @Autowired
+    @Resource
     private SysUserMapper sysUserMapper;
 
     @Override
@@ -39,5 +40,12 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         }
         wrapper.orderByDesc("id");
         return sysUserMapper.selectPage(page,wrapper);
+    }
+
+    @Override
+    public SysUser findByUsername(String username) {
+        QueryWrapper<SysUser> wrapper = new QueryWrapper<>();
+        wrapper.eq("username",username);
+        return sysUserMapper.selectOne(wrapper);
     }
 }

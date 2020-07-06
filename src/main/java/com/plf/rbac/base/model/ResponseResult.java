@@ -17,11 +17,11 @@ public class ResponseResult<T> {
     private String message;
     private T data;
 
-    public ResponseResult success(T data){
+    public static<T> ResponseResult success(T data){
         return new ResponseResult(200,"处理成功",data);
     }
 
-    public ResponseResult fail(String message){
+    public static<T> ResponseResult fail(String message){
         return new ResponseResult(500,message,null);
     }
 }
