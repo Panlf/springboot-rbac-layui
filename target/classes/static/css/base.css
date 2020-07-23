@@ -1,0 +1,30 @@
+/*              login.html页面的CSS样式                              */
+.login-container{
+    background-color: white;
+    border-radius: 10px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 270px;
+    padding: 20px;
+}
+
+.login-container .login-title{
+    margin: 10px 20px;
+    color:  #787878;
+    font-size: 25px;
+}
+
+.login-container .layui-icon {
+    font-size:  25px;
+    color: #cccccc;
+    float: left;
+    display: block;
+    margin-top: 5px;
+    margin-right: 5px;
+}
