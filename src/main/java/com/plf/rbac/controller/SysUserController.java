@@ -1,18 +1,14 @@
 package com.plf.rbac.controller;
 
-
-import cn.hutool.Hutool;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.plf.rbac.base.model.ResponseResult;
 import com.plf.rbac.entity.SysUser;
 import com.plf.rbac.service.ISysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * <p>
@@ -63,12 +59,12 @@ public class SysUserController {
     }
 
     @GetMapping("/page")
-    public ResponseResult<Page<SysUser>> getUserPage(@RequestParam(defaultValue = "10") Integer pageSize,
-                                                     @RequestParam(defaultValue = "0") Integer pageNum,
+    public ResponseResult<Page<SysUser>> getUserPage(@RequestParam(defaultValue = "0") Integer page,
+                                                     @RequestParam(defaultValue = "10") Integer limit,
                                                      String username,
                                                      String realname){
-        Page<SysUser> page = new Page<>(pageNum,pageSize);
-        Page<SysUser> list = sysUserService.findUserPageByName(page,username,realname);
+        Page<SysUser> pageUser = new Page<>(page,limit);
+        Page<SysUser> list = sysUserService.findUserPageByName(pageUser,username,realname);
         return ResponseResult.success(list);
     }
 }

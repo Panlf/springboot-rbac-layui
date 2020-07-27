@@ -45,6 +45,11 @@ public class SysPermission implements Serializable {
     private String path;
 
     /**
+     * 父ID
+     */
+    private int parentId;
+
+    /**
      * 删除标志位 默认0， 1代表已删除
      */
     private Integer flag;

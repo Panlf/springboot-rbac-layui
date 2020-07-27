@@ -54,7 +54,7 @@
 </body>
 <script th:src="@{/layui/layui.js}"></script>
 <script th:src="@{/js/md5.js}"></script>
-<script>
+<script th:inline="none">
     layui.use(['form','layer'], function () {
         let form = layui.form,layer = layui.layer,$ = layui.jquery;
 

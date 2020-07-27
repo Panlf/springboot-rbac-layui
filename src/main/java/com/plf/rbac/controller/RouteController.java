@@ -22,4 +22,9 @@ public class RouteController {
     public String toIndex(){
         return "index";
     }
+
+    @GetMapping("user")
+    public String toUser(){
+        return "user";
+    }
 }
