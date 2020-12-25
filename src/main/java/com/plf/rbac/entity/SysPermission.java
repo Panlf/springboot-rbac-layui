@@ -35,7 +35,7 @@ public class SysPermission implements Serializable {
     private String icon;
 
     /**
-     * 类型 0 目录 1 菜单 2 按钮  3 访问接口
+     * 类型  1 菜单 2 按钮  3 访问接口
      */
     private Integer type;
 

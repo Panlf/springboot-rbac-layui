@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        th:href="@{/layui/css/layui.css}">
+  <link rel="stylesheet"
+        th:href="@{/css/base.css}">
+  <title>菜单</title>
+</head>
+
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">layui 后台布局</div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="">控制台</a></li>
+        <li class="layui-nav-item"><a href="">商品管理</a></li>
+        <li class="layui-nav-item"><a href="">用户</a></li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">其它系统</a>
+          <dl class="layui-nav-child">
+            <dd><a href="">邮件管理</a></dd>
+            <dd><a href="">消息管理</a></dd>
+            <dd><a href="">授权管理</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href="javascript:;">
+            <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+            贤心
+          </a>
+          <dl class="layui-nav-child">
+            <dd><a href="">基本资料</a></dd>
+            <dd><a href="">安全设置</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">退了</a></li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+          <li class="layui-nav-item layui-nav-itemed">
+            <a class="" href="javascript:;">所有商品</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">列表一</a></dd>
+              <dd><a href="javascript:;">列表二</a></dd>
+              <dd><a href="javascript:;">列表三</a></dd>
+              <dd><a href="">超链接</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">列表一</a></dd>
+              <dd><a href="javascript:;">列表二</a></dd>
+              <dd><a href="">超链接</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item"><a href="">云市场</a></li>
+          <li class="layui-nav-item"><a href="">发布商品</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+      <!-- 内容主体区域 -->
+      <div style="padding: 15px;">
+        <div class="layui-container">
+        <div class="layui-row">
+          <div class="layui-col-md3 layui-col-md-offset1">
+            <div id="test7" class="demo-tree"></div>
+          </div>
+          <div class="layui-col-md3 layui-col-md-offset1">
+            <form class="layui-form" action="" id="formData">
+              <div class="layui-form-item">
+                <label class="layui-form-label">上级目录</label>
+                <div class="layui-input-block">
+                  <input type="text" name="parent" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">主键</label>
+                <div class="layui-input-block">
+                  <input type="text" name="id" autocomplete="off" placeholder="请输入id" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">标题</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © layui.com - 底部固定区域
+      </div>
+    </div>
+    <script th:src="@{/layui/layui.js}"></script>
+    <script th:inline="none">
+      //JavaScript代码区域
+      layui.use(['element', 'tree'], function () {
+        var element = layui.element, tree = layui.tree, $ = layui.jquery
+          , data2 = [{
+            title: '早餐'
+            , id: 1
+            , spread: true
+            , children: [{
+              title: '油条'
+              , id: 5
+            }, {
+              title: '包子'
+              , id: 6
+            }, {
+              title: '豆浆'
+              , id: 7
+            }]
+          }, {
+            title: '午餐'
+            , id: 2
+            , spread: true
+            , children: [{
+              title: '藜蒿炒腊肉'
+              , id: 8
+            }, {
+              title: '西湖醋鱼'
+              , id: 9
+            }, {
+              title: '小白菜'
+              , id: 10
+            }, {
+              title: '海带排骨汤'
+              , id: 11
+            }]
+          }, {
+            title: '晚餐'
+            , id: 3
+            , spread: true
+            , children: [{
+              title: '红烧肉'
+              , id: 12
+              , fixed: true
+            }, {
+              title: '番茄炒蛋'
+              , id: 13
+            }]
+          }, {
+            title: '夜宵'
+            , id: 4
+            , spread: true
+            , children: [{
+              title: '小龙虾'
+              , id: 14
+            }, {
+              title: '香辣蟹'
+              , id: 15
+            }, {
+              title: '烤鱿鱼'
+              , id: 16
+            }]
+          }];
+
+ 
+
+        tree.render({
+          elem: '#test7'
+          , data: data2
+          , showLine: false
+          , accordion: true
+          , onlyIconControl: true
+          , click: function (obj) {
+            var data = obj.data;  //获取当前点击的节点数据
+       
+            //alert(JSON.stringify(obj.elem))
+           // $(obj.elem).css("color","red")
+            var nodes = $(".layui-tree-txt");
+            for(var i=0;i<nodes.length;i++){
+              if(nodes[i].innerHTML === obj.data.title){
+                  nodes[i].style.color = "#01AAED";
+              }else{
+                  nodes[i].style.color= "#555555";
+              }
+            }
+
+            layer.msg('状态：' + obj.state + '<br>节点数据：' + JSON.stringify(data));
+            $('#formData input[name="id"]').val(data.id)
+            $('#formData input[name="title"]').val(data.title)
+          }
+        });
+      });
+    </script>
+</body>
+
+</html>

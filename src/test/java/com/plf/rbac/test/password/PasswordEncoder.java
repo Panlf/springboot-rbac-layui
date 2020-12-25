@@ -1,6 +1,5 @@
 package com.plf.rbac.test.password;
 
-import cn.hutool.crypto.digest.MD5;
 import org.junit.Test;
 import org.springframework.util.DigestUtils;
 

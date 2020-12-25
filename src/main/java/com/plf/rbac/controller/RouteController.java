@@ -27,4 +27,9 @@ public class RouteController {
     public String toUser(){
         return "user";
     }
+
+    @GetMapping("menu")
+    public String toMenu(){
+        return "menu";
+    }
 }
