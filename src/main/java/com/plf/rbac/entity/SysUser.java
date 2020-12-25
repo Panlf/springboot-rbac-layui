@@ -40,9 +40,9 @@ public class SysUser implements Serializable {
     private String realname;
 
     /**
-     * 年龄
+     * 手机
      */
-    private Integer age;
+    private String phone;
 
     /**
      * 生日

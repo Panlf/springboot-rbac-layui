@@ -31,4 +31,5 @@ public interface ISysUserService extends IService<SysUser> {
      * @return
      */
     SysUser findByUsername(String username);
+
 }

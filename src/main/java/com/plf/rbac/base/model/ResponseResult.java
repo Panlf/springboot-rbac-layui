@@ -21,6 +21,10 @@ public class ResponseResult<T> {
         return new ResponseResult(200,"处理成功",data);
     }
 
+    public static<T> ResponseResult success(String message){
+        return new ResponseResult(200,message,null);
+    }
+
     public static<T> ResponseResult fail(String message){
         return new ResponseResult(500,message,null);
     }

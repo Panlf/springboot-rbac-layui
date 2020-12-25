@@ -21,6 +21,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/sysUser")
 public class SysUserController {
+    //TODO　集成shiro
 
     @Resource
     private ISysUserService sysUserService;
@@ -35,9 +36,8 @@ public class SysUserController {
         if(oSysUser!=null) {
             return ResponseResult.fail("用户名已存在请修改");
         }
-
-        //对密码进行加密，之后可以集成shiro
-        sysUser.setPassword(DigestUtils.md5DigestAsHex(sysUser.getPassword().getBytes()).toString());
+        //密码默认是123456
+        sysUser.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()).toString());
 
 
         sysUserService.save(sysUser);
@@ -67,4 +67,33 @@ public class SysUserController {
         Page<SysUser> list = sysUserService.findUserPageByName(pageUser,username,realname);
         return ResponseResult.success(list);
     }
+
+    @PostMapping("/update")
+    public ResponseResult<SysUser> updateUser(SysUser sysUser){
+
+        if(sysUser.getId()==null){
+            return ResponseResult.fail("参数不全");
+        }
+
+        boolean flag = sysUserService.updateById(sysUser);
+
+        if(flag){
+            return ResponseResult.success(sysUser);
+        }else{
+            return ResponseResult.fail("更新失败");
+        }
+    }
+
+    @PostMapping("/remove")
+    public ResponseResult<String> removeUser(Integer id){
+
+        boolean flag = sysUserService.removeById(id);
+
+        if(flag){
+            return ResponseResult.success("删除成功");
+        }else{
+            return ResponseResult.fail("删除失败");
+        }
+    }
+
 }
